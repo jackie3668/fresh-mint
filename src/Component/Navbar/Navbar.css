@@ -130,6 +130,7 @@ nav ul li:last-child {
     opacity: 0;
   }
 }
+
 @keyframes fade-out-right {
   0% {
     -webkit-transform: translateX(0);
@@ -143,3 +144,35 @@ nav ul li:last-child {
   }
 }
 
+@media (min-width: 577px) {
+
+}
+
+@media (min-width: 769px) {
+
+}
+
+@media (min-width: 993px) {
+  #mobile {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+  }
+
+  nav ul {    
+    border-top: none;   
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1201px) {
+
+}
