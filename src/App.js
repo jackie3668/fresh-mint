@@ -3,6 +3,9 @@ import Hero from './Component/Hero/Hero';
 import Navbar from './Component/Navbar/Navbar';
 import arrow from './Asset/UI/upload.png'
 import { useEffect } from 'react';
+import Steps from './Component/Steps/Steps';
+import Countdown from './Component/Countdown/Countdown';
+import Slider from './Component/Slider/Slider';
 
 function App() {
   useEffect(() => {
@@ -32,6 +35,10 @@ function App() {
       </div>
       <Navbar />
       <Hero />
+      <Steps />
+      <Countdown />
+      <Slider />
+      <Steps />
     </div>
   );
 }

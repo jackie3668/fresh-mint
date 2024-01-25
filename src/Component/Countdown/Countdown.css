@@ -1,0 +1,201 @@
+.countdown {
+  background-image: url('../../Asset/Home/countdown3.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 18% 5% 10% 5%;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.countdown img {
+  position: absolute;
+  width: 30%;
+  top: -20%;
+  left: 5%;
+}
+
+.countdown p {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.countdown-timer {
+  display: flex;
+}
+
+.countdown-flip-card {
+  font-size: 3rem;
+  font-weight: 700;
+  display: inline-flex;
+  flex-direction: column;
+  box-shadow: 0 0px 6px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 0.1em;
+  min-width: 3.5rem;
+  position: relative;
+}
+
+.countdown-flip-card-top,
+.countdown-flip-card-bot,
+.countdown-flip-card::after,
+.countdown-flip-card::before {
+  height: 0.75em;
+  line-height: 1;
+  padding: .25em;
+  overflow: hidden;
+}
+
+.countdown-flip-card-top,
+.countdown-flip-card::before {
+  background-color: #f0f0f0;
+  border-top-right-radius: .1em;
+  border-top-left-radius: .1em;
+  border-bottom: 0.25px solid rgba(0, 0, 0, 0.05);
+}
+
+
+.countdown-flip-card-bot,
+.countdown-flip-card::after {
+  background-color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+  border-bottom-right-radius: .1em;
+  border-bottom-left-radius: .1em;
+}
+
+.countdown-flip-card.flip-top::before {
+  position: absolute;
+  display: inline-block;
+  content: var(--before-content);
+  width: 100%;
+  animation: flip-top 500ms ease-in-out;
+  transform-origin: bottom;
+}
+
+.countdown-flip-card.flip-bot::after {
+  position: absolute;
+  content: var(--after-content);
+  bottom: 0;
+  width: 100%;
+  animation: flip-bot 500ms ease-out;
+  transform-origin: top;
+  transform: rotateX(90deg);
+}
+
+.countdown-h,
+.countdown-m,
+.countdown-s {
+  display: inline-flex;
+  gap: 0.25rem;
+  margin-right: 1rem;
+}
+
+.countdown button {  
+  margin-top: 1.25rem;
+  border: none;
+  border-radius: 2.5rem;
+  background: var(--accent4);
+  color: var(--background);
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  font-size: 1.25rem;
+  padding: 2% 8%;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  background-color: var(--cta);
+  cursor: pointer;
+  display: inline-block;
+  opacity: 1;
+  position: relative;
+  text-align: center;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),
+              background-color 100ms cubic-bezier(.694, 0, 0.335, 1),
+              color 100ms cubic-bezier(.694, 0, 0.335, 1);
+}
+
+.countdown button::before {
+  border-radius: 2.5rem;
+  animation: opacityFallbackOut .5s step-end forwards;
+  background-color: var(--accent4);
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1),
+              -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.countdown button:hover::before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.countdown button span {
+  z-index: 1;
+  color: var(--background);
+  position: relative;
+}
+
+@keyframes flip-top {
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+
+@keyframes flip-bot {
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+.countdown-flip-card::after {
+
+}
+@media (max-width: 576px) {
+
+}
+
+@media (min-width: 577px)  {
+
+}
+
+@media (min-width: 769px) {
+  .countdown img {
+    top: -25%;
+    left: 5%;
+  }
+}
+
+@media (min-width: 993px) {
+  .countdown img {
+    width: 20%;
+  }
+
+  .countdown img {
+    width: 25%;
+    top: -23%;
+    left: 5%;
+  }
+}
+
+@media (min-width: 1201px) {
+  .countdown {
+    padding: 10% 5%;
+  }
+  .countdown img {
+    width: 20%;
+    top: -28%;
+    left: 5%;
+  }
+
+  .countdown button {
+    padding: 1.5% 5%;
+  }
+}

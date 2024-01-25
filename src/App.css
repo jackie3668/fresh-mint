@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700;1,6..96,800;1,6..96,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
 :root {
   --primary: #CDE7DC;   
+  --secondary: #d7ddd7;
   --accent1: #E6BBAD;  
   --accent2: #F7B05B;    
   --accent3: #99C1B9;
   --accent4: #ff8c00;
   --background: #F4F4F4; 
   --text: #30362F; 
+  --cta:rgb(218, 28, 28);
 }
 
-* {
+*, *::after, *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,7 +28,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Bodoni Moda', Georgia, serif;
+  font-family: 'Sacramento', cursive;
   font-family: 'Lora', Times New Roman, serif;
   font-weight: 300;
 }
@@ -113,31 +116,31 @@ button, a, ul, ol, li {
 
 @media (max-width: 576px) {
   html {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 13px;
   }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
   html {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
   html {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
 @media (min-width: 1201px) {
   html {
-    font-size: 22px;
+    font-size: 16px;
   }
 }
 

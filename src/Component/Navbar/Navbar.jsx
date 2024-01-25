@@ -5,31 +5,42 @@ import menu from '../../Asset/UI/hamburger.png'
 import close from '../../Asset/UI/close.png'
 
 const Navbar = () => {
-  const [menuHidden, setMenuHidden] = useState(true)
+  const [menuHidden, setMenuHidden] = useState(false)
 
-  useEffect(() => {
-    const targetDiv = document.querySelector('nav ul')
+  const handleMenuToggle = () => {
+    const targetDiv = document.querySelector('nav ul');
     if (!menuHidden) {
-      targetDiv.classList.add('fade-in-right')
-      targetDiv.classList.remove('fade-out-right')
+      targetDiv.classList.add('fade-in-menu');
+      targetDiv.classList.remove('fade-out-menu');
+      targetDiv.classList.remove('hidden');
     } else {
-      targetDiv.classList.remove('fade-in-right')
-      targetDiv.classList.add('fade-out-right')
-    }
-  }, [menuHidden])
+      targetDiv.classList.remove('fade-in-menu');
+      targetDiv.classList.add('fade-out-menu');
+      
+      setTimeout(() => {
+        targetDiv.classList.add('hidden'); 
+        targetDiv.classList.remove('fade-out-menu'); 
+      }, 300); 
+    }    
+
+    setTimeout(() => {
+      setMenuHidden(!menuHidden);
+    }, 300); 
+  };
+  
 
   return (
     <nav>
       <div className='nav-logo'>
         <h1 className='logo'>FreshMint <img src={logo} alt="" /></h1>
         <img 
-          src={menuHidden ? menu : close} 
+          src={menuHidden ? close : menu} 
           className={menuHidden ? '' : 'close'}
-          onClick={()=>{setMenuHidden(!menuHidden)}}
+          onClick={handleMenuToggle}
           id='mobile'
         />
       </div>
-      <ul className={menuHidden ? '' : 'active'}>
+      <ul className='hidden'>
         <li>Home</li>
         <li>About</li>        
         <li>Recipes</li>
