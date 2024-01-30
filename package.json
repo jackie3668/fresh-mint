@@ -1,6 +1,6 @@
 {
   "name": "fresh-mint",
-  "home": "https://jackie3668.github.io/fresh-mint/",
+  "homepage":"https://jackie3668.github.io/fresh-mint/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
