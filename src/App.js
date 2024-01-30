@@ -37,9 +37,9 @@ function App() {
   return (
     <div className="App">
       <div className='scroll-up' onClick={() => {window.scrollTo({top: 0, behavior: 'smooth'})}}>
-        <img src={arrow} alt="Scroll to top" /> {/* Added alt attribute for accessibility */}
+        <img src={arrow} alt="Scroll to top" /> 
       </div>
-      <BrowserRouter basename='/freshmint'>
+      <BrowserRouter basename='/fresh-mint'>
         <Navbar />
         <Routes>
           <Route 
