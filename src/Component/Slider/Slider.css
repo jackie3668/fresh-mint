@@ -1,9 +1,20 @@
 .slider {
-  max-width: 1200px;
-  padding: 20% 5%;
+  padding: 10% 5%;
   position: relative;
 }
 
+.slider h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.slider h1 span {
+  position: absolute;
+  font-family: 'Sacramento', cursive;
+  font-size: 2rem;
+  top: -1.3rem;
+}
 
 .slider-wrapper .slide-button {
   position: absolute;
@@ -12,9 +23,12 @@
   height: 50px;
   padding: 1.5%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   background: var(--primary);
   border-radius: 100%;
   z-index: 1;
+  cursor: pointer;
 }
 
 #next-slide {
@@ -35,6 +49,7 @@
   scrollbar-width: none;
   margin-bottom: 1rem;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 .slider-wrapper .image-list::-webkit-scrollbar {
@@ -88,4 +103,32 @@
   right: 0;
   top: -10px;
   bottom: -10px;
+}
+
+@media (max-width: 576px) {
+
+}
+
+@media (min-width: 577px) {
+
+}
+
+@media (min-width: 769px) {
+  .slider-wrapper .slide-button {
+    margin: 0 2.5%;
+  }
+}
+
+@media (min-width: 993px) {
+  .slider {
+    padding: 5% 10%;
+  }
+
+  .slider-wrapper .slide-button {
+    margin: 0 8.75%;
+    padding: 0.75%;
+  }
+}
+
+@media (min-width: 1201px) {
 }

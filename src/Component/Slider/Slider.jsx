@@ -89,6 +89,7 @@ const Slider = () => {
   
   return (
     <div className='slider'>
+      <h1><span>On The Menu</span>This Week</h1>
       <div className="slider-wrapper">
       <img src={arrow} id="prev-slide" className='slide-button' alt="" />
         <div className="image-list">

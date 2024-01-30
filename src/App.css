@@ -5,7 +5,7 @@
   --primary: #CDE7DC;   
   --secondary: #d7ddd7;
   --accent1: #E6BBAD;  
-  --accent2: #F7B05B;    
+  --accent2: #194452;    
   --accent3: #99C1B9;
   --accent4: #ff8c00;
   --background: #F4F4F4; 
@@ -24,7 +24,7 @@ body {
   color: var(--text);
   font-size: 1rem;
   font-family: 'Athiti', Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,24 +33,31 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
-button, a, ul, ol, li {
+button, a, ul, ol, li, input {
   font-family: 'Athiti', Times New Roman, serif;
   list-style: none;
   text-decoration: none;
 }
 
+a {
+  color: inherit;
+  font-size: 1rem;
+}
+
 .scroll-up {
-  background: var(--accent1);
+  background: var(--cta);
   padding: 1% 1.5%;
   border-radius: 10px; 
   position: fixed;
   bottom: 1rem;
   right: 1rem;
   cursor: pointer;
+  z-index: 999;
 }
 
 .scroll-up img {
   width: 2rem;
+  filter: invert(1);
 }
 
 .fade-in-right {
@@ -116,31 +123,31 @@ button, a, ul, ol, li {
 
 @media (max-width: 576px) {
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
   html {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
   html {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
   html {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 1201px) {
   html {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 

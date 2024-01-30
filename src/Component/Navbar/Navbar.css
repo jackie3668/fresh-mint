@@ -17,13 +17,14 @@ nav {
 .nav-logo img,
 .logo img {
   width: 2rem;
-  cursor: pointer;
+  height: 2rem;
+  cursor: pointer;  
+  align-self: flex-end;
 }
 
 .nav-logo .close {
   width: 2rem;
   height: 2rem;
-  align-self: flex-end;
 }
 
 .nav-logo {
@@ -34,7 +35,7 @@ nav {
 
 
 @media (max-width: 992px) {
-  .hidden {
+  nav .hidden {
     display: none;
   }
 

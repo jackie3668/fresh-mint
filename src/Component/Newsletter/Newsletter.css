@@ -1,0 +1,117 @@
+.newsletter {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-banner {
+  background-image: url('../../Asset/Home/newsletter.jpg');
+  background-size: cover;
+  background-position: 0% 50%;
+}
+
+.newsletter-signup {
+  padding: 8%;
+  align-self: center;
+  text-align: center;
+  max-width: 800px;
+}
+
+.newsletter-signup h2 {
+  font-weight: 800;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-signup h2 span {
+  font-weight: 400;
+  position: absolute;
+  font-family: 'Sacramento', cursive;
+  font-size: 2rem;
+  top: -1.75rem;
+}
+
+.newsletter-signup p {
+  margin: 3% 0;
+}
+
+.newsletter-fine-print {
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+.newsletter-signup-wrapper input {
+  height: 3.5rem;
+  padding: 2%;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.newsletter-signup-wrapper button {
+  height: 3.5rem;
+  background-color: var(--cta);
+  color: var(--background);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.newsletter-signup-wrapper button:hover {
+  transform: scale(0.98);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 768px) {
+  .newsletter-banner {
+    height: 40vh;
+  }
+
+  .newsletter-signup-wrapper input,
+  .newsletter-signup-wrapper button {
+    width: 100%;
+  } 
+
+  .newsletter-signup-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .newsletter-banner {
+    height: 60vh;
+  }
+
+  .newsletter-signup-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .newsletter-signup-wrapper input {
+    flex: 7;
+  }
+
+  .newsletter-signup-wrapper button {
+    flex: 3;
+  }
+}
+
+@media (min-width: 993px) {
+
+}
+
+@media (min-width: 1201px) {
+
+}

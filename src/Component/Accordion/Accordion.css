@@ -1,0 +1,152 @@
+.accordion {
+  background: var(--primary);
+  background-size: cover;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-wrapper {
+  padding: 5%;
+  width: 600px;
+  background: var(--background);
+  border-radius: 1rem;
+  box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+.faq-wrapper h1 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 500;
+}
+
+.faq-wrapper h1 img {
+  width: 2rem;
+}
+
+.faq {
+  padding: 5% 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(202, 202, 202, 0.6);
+}
+
+.faq-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+
+.faq-q h3 {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.faq-q h3:hover {
+  filter: invert(1);
+  color: var(--accent1);
+}
+
+.faq-q img {
+  border-radius: 100%;
+  width: 2rem;
+  filter: invert(1);
+  background: var(--accent1);
+  cursor: pointer;
+}
+
+.faq-a {
+  display: none;
+}
+
+.accordion .active {
+  display: block;
+}
+
+.fade-in-top {
+  display: block;
+	-webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.fade-out-top {
+	-webkit-animation: fade-out-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: fade-out-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+ @-webkit-keyframes fade-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+}
+@keyframes fade-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+}
+
+
+@media (max-width: 576px) {
+
+}
+
+@media (min-width: 577px) {
+
+}
+
+@media (min-width: 769px) {
+
+}
+
+@media (min-width: 993px) {
+  .faq-wrapper {
+    padding: 6%;
+  }
+}
+
+@media (min-width: 1201px) {
+}

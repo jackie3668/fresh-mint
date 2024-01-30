@@ -1,4 +1,6 @@
 import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Hero from './Component/Hero/Hero';
 import Navbar from './Component/Navbar/Navbar';
 import arrow from './Asset/UI/upload.png'
@@ -6,6 +8,10 @@ import { useEffect } from 'react';
 import Steps from './Component/Steps/Steps';
 import Countdown from './Component/Countdown/Countdown';
 import Slider from './Component/Slider/Slider';
+import Accordion from './Component/Accordion/Accordion';
+import Testimonial from './Component/Testimonial/Testimonial';
+import Newsletter from './Component/Newsletter/Newsletter';
+import Footer from './Component/Footer/Footer';
 
 function App() {
   useEffect(() => {
@@ -30,15 +36,28 @@ function App() {
   
   return (
     <div className="App">
-      <div className='scroll-up'>
-        <img src={arrow} />
+      <div className='scroll-up' onClick={() => {window.scrollTo({top: 0, behavior: 'smooth'})}}>
+        <img src={arrow} alt="Scroll to top" /> {/* Added alt attribute for accessibility */}
       </div>
-      <Navbar />
-      <Hero />
-      <Steps />
-      <Countdown />
-      <Slider />
-      <Steps />
+      <BrowserRouter basename='/freshmint'>
+        <Navbar />
+        <Routes>
+          <Route 
+            path='/' 
+            element={
+              <React.Fragment>
+                <Hero />
+                <Steps />
+                <Countdown />
+                <Slider />
+                <Accordion />
+                <Newsletter />
+              </React.Fragment>
+            }>
+          </Route>
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
