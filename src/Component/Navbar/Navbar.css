@@ -14,12 +14,23 @@ nav {
   font-size: 2rem;
 }
 
+.logo a {
+  display: flex; 
+  align-items: center;
+  cursor: pointer;
+  gap: 0.3rem;
+  color: var(--text);
+  font-family: 'Sacramento', cursive;
+  font-size: 2rem;
+}
+
 .nav-logo img,
-.logo img {
+.logo img,
+.logo a img {
   width: 2rem;
   height: 2rem;
   cursor: pointer;  
-  align-self: flex-end;
+  align-self: self-start;
 }
 
 .nav-logo .close {
@@ -33,6 +44,9 @@ nav {
   justify-content: space-between;
 }
 
+nav ul li {
+  padding: 0.5% 1.5%;
+}
 
 @media (max-width: 992px) {
   nav .hidden {
@@ -59,6 +73,20 @@ nav {
   
   nav ul li:last-child {
     border-bottom: none;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav ul li:last-child::after {
+    content: "";
+    width: 5rem;
+    height: 3px;
+    position: absolute;
+    background-color: red;
+    top: 63%;
   }
 
   .fade-in-menu {
@@ -90,6 +118,17 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  
+  nav ul li:last-child {
+    background-color: var(--cta);
+    color: var(--background);
+    border-radius: 8px;
+    font-weight: 600;
+  }
+  
+  nav ul li:last-child:hover {
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);
   }
 
   .fade-out-menu,

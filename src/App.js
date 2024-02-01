@@ -9,9 +9,9 @@ import Steps from './Component/Steps/Steps';
 import Countdown from './Component/Countdown/Countdown';
 import Slider from './Component/Slider/Slider';
 import Accordion from './Component/Accordion/Accordion';
-import Testimonial from './Component/Testimonial/Testimonial';
 import Newsletter from './Component/Newsletter/Newsletter';
 import Footer from './Component/Footer/Footer';
+import Subscribe from './Page/Subscribe/Subscribe';
 
 function App() {
   useEffect(() => {
@@ -55,6 +55,7 @@ function App() {
               </React.Fragment>
             }>
           </Route>
+          <Route path='/subscribe' element={<Subscribe />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import './Navbar.css'
 import logo from '../../Asset/UI/peppermint.png'
 import menu from '../../Asset/UI/hamburger.png'
@@ -32,7 +33,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className='nav-logo'>
-        <h1 className='logo'>FreshMint <img src={logo} alt="" /></h1>
+        <h1 className='logo'><Link to='/'>FreshMint <img src={logo} alt="" /></Link></h1>
         <img 
           src={menuHidden ? close : menu} 
           className={menuHidden ? '' : 'close'}
@@ -44,8 +45,8 @@ const Navbar = () => {
         <li>Home</li>
         <li>About</li>        
         <li>Recipes</li>
-        <li>Subscribe</li>
         <li>Contact Us</li>
+        <li><Link to='/subscribe'>Subscribe</Link></li>
       </ul>
     </nav>
   )
