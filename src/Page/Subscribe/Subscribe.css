@@ -1,8 +1,3 @@
-.subscribe {
-  background-color: #fff;
-  height: 100vh;
-}
-
 .subscribe-breadcrumbs {
   background-color: #fff;
   height: 10vh;
@@ -42,9 +37,35 @@
   border-radius: 8px;
   background-color:  var(--accent2);
 }
+
 .subscribe-render {
   background-color: var(--secondary);
-  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.subscribe button {
+  width: 15rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  border: none;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--background);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 1.5PX;
+  background-color: var(--accent1);
+  cursor: pointer;
+}
+
+.subscribe button:hover {
+  background-color: var(--accent2);
 }
 
 @media (max-width: 576px) {

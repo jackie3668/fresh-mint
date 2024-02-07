@@ -1,0 +1,247 @@
+.select {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #fff;
+  padding: 5%;
+  border-radius: 10px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  gap: 3rem;
+}
+
+.select-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.diet-preferences {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+.option-wrapper {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center; 
+ gap: 0.5rem;
+ position: relative;
+ border: 1px solid #c5c5c5;
+ padding: 10% 0;
+ border-radius: 10px;
+ cursor: pointer;
+ margin: 2px 0;
+}
+
+.option-wrapper:hover {
+  border: 2px solid var(--accent3);
+  margin: 1px 0;
+}
+
+.option-wrapper.checked {
+  border: 3px solid var(--accent3);
+  margin: 0;
+}
+
+.option-wrapper img:first-child {
+  display: none;
+  padding: 0.45rem;
+  border-radius: 100%;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+.option-wrapper.checked img:first-child {
+  display: block;
+  width: 1.75rem;
+  background-color: var(--accent3);
+}
+
+.option-wrapper img:nth-child(2) {
+  width: 3rem;
+}
+
+.select-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.select-right>div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.meal-count-container {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.25rem;
+}
+
+.meal-count-container>div {
+  border: 1px solid #c5c5c5;
+  color: var(--text);
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1px 0;
+}
+
+.meal-count-container>div:hover {
+  background-color: var(--accent3);
+}
+
+.meal-count-container>div.checked {
+  background-color: var(--accent3);
+  margin: 0;
+  border: 2px solid var(--text);
+}
+
+.plan-details {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border-radius: 8px;
+}
+
+.plan-preferences {
+  font-weight: 600;
+  padding: 5% 5% 2% 5%;
+}
+
+.plan-preferences span {
+  font-weight: 400;
+}
+
+.plan-count {
+  padding: 2.5% 5%;
+}
+
+.plan-price,
+.plan-perserving,
+.plan-total {
+  padding: 1% 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan-price {
+  border-top: 1px solid lightgray;
+}
+
+.plan-total {
+  background-color: var(--background);
+  padding: 8% 5% 5% 5%;
+}
+
+.plan-price p:nth-child(2) {
+  font-weight: 800;
+}
+
+.plan-perserving p:nth-child(2),
+.plan-total p:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem
+}
+
+.plan-total p:nth-child(1) {
+  font-weight: 600;
+}
+
+.plan-perserving p:nth-child(2) span:first-child,
+.plan-total p:nth-child(2) span:first-child {
+  text-decoration: line-through;
+  color: grey;
+  font-weight: 800;
+}
+
+.plan-perserving p:nth-child(2) span:nth-child(2),
+.plan-total p:nth-child(2) span:nth-child(2) {
+  color: var(--cta);
+  font-weight: 800;
+}
+
+@media (max-width: 992px) {
+  .select {
+    max-width: 525px;
+  }
+
+  .select-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .select-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .select-right>div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 993px)  {
+  .select-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .select-left {
+    position: relative;
+  }
+
+  .select-left::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    top: 0;
+    right: -3rem;
+    display: block;
+    border: 0.5px dashed var(--secondary);
+  }
+}
+
+@media (min-width: 1201px) {
+
+}
