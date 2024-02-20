@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.css": "/fresh-mint/static/css/main.6b946473.css",
-    "main.js": "/fresh-mint/static/js/main.38aeeaeb.js",
+    "main.css": "/fresh-mint/static/css/main.76163f78.css",
+    "main.js": "/fresh-mint/static/js/main.0778e873.js",
+    "static/media/pexels-quang-nguyen-vinh-2131784.jpg": "/fresh-mint/static/media/pexels-quang-nguyen-vinh-2131784.d750de33ac047dd8ab25.jpg",
+    "static/media/pexels-markus-spiske-1268101.jpg": "/fresh-mint/static/media/pexels-markus-spiske-1268101.2ef1b9218a06c8fa31ef.jpg",
     "static/media/1 (3).jpg": "/fresh-mint/static/media/1 (3).9c65ce8fd65137c69254.jpg",
     "static/media/step1.jpg": "/fresh-mint/static/media/step1.73ef0d4c15c10b337587.jpg",
     "static/media/countdown3.jpg": "/fresh-mint/static/media/countdown3.e82617974b98fe541fcc.jpg",
     "static/media/step3.jpg": "/fresh-mint/static/media/step3.fc5d95079c01644d352d.jpg",
+    "static/media/pexels-ella-olsson-1640770 (1).jpg": "/fresh-mint/static/media/pexels-ella-olsson-1640770 (1).c05e515d881604400974.jpg",
     "static/media/pexels-ella-olsson-1640770.jpg": "/fresh-mint/static/media/pexels-ella-olsson-1640770.c05e515d881604400974.jpg",
     "static/media/hero-2.jpg": "/fresh-mint/static/media/hero-2.a99467f36b64bcc67228.jpg",
     "static/media/1 (5).jpg": "/fresh-mint/static/media/1 (5).ffe4bfcb14a71654f925.jpg",
@@ -13,21 +16,30 @@
     "static/media/1 (1).jpg": "/fresh-mint/static/media/1 (1).967b334594319abebfc2.jpg",
     "static/media/1 (2).jpg": "/fresh-mint/static/media/1 (2).72b807b894eb0c3848b0.jpg",
     "static/media/newsletter.jpg": "/fresh-mint/static/media/newsletter.4205d0535ab7430fae69.jpg",
+    "static/media/pexels-lukas-928199.jpg": "/fresh-mint/static/media/pexels-lukas-928199.69d4afa12853cb330369.jpg",
     "static/media/1 (9).jpg": "/fresh-mint/static/media/1 (9).43cac33b45a4ca1e7459.jpg",
     "static/media/step2.jpg": "/fresh-mint/static/media/step2.8da71f0969523892884e.jpg",
     "static/media/1 (7).jpg": "/fresh-mint/static/media/1 (7).fe24964911f8798bd1b8.jpg",
     "static/media/1 (10).jpg": "/fresh-mint/static/media/1 (10).fcf3844e8a05900480d0.jpg",
     "static/media/1 (4).jpg": "/fresh-mint/static/media/1 (4).32813be9d429ead5171d.jpg",
+    "static/media/pexels-andrea-piacquadio-3769999.jpg": "/fresh-mint/static/media/pexels-andrea-piacquadio-3769999.d20f7b10632791c6c537.jpg",
     "static/media/1 (8).jpg": "/fresh-mint/static/media/1 (8).c90b8388ec5ff568804e.jpg",
+    "static/media/pexels-akil-mazumder-1072824.jpg": "/fresh-mint/static/media/pexels-akil-mazumder-1072824.a82638a7a5fc8377ef7b.jpg",
     "static/media/sale1.png": "/fresh-mint/static/media/sale1.d6a594c87f78ed9478e2.png",
+    "static/media/food-waste.png": "/fresh-mint/static/media/food-waste.164a8a09e4da0b5543dc.png",
+    "static/media/planet-earth.png": "/fresh-mint/static/media/planet-earth.8b2e58e231aa149377f3.png",
     "static/media/option2.png": "/fresh-mint/static/media/option2.5ee077b0f09c4d63c62b.png",
     "static/media/option1.png": "/fresh-mint/static/media/option1.406ee53e7b4b4fb578d3.png",
     "static/media/option3.png": "/fresh-mint/static/media/option3.68a4c620ba2cc2e2dc19.png",
     "static/media/option4.png": "/fresh-mint/static/media/option4.c0e5c062060d097bbf2e.png",
+    "static/media/containers.png": "/fresh-mint/static/media/containers.48f7386427725ae90f73.png",
+    "static/media/organic.png": "/fresh-mint/static/media/organic.3bedfcc76eb595aeb21c.png",
     "static/media/peppermint.png": "/fresh-mint/static/media/peppermint.674380d85765130ca946.png",
+    "static/media/healthy.png": "/fresh-mint/static/media/healthy.252a93250355d2b0e099.png",
     "static/media/megaphone.png": "/fresh-mint/static/media/megaphone.2a2607e43407d566d7f4.png",
     "static/media/option5.png": "/fresh-mint/static/media/option5.6f324098dea0e166b80a.png",
     "static/media/option6.png": "/fresh-mint/static/media/option6.36d3cbf217f0931a4867.png",
+    "static/media/weekly.png": "/fresh-mint/static/media/weekly.f328e026b63b2b9c68c8.png",
     "static/media/step1.png": "/fresh-mint/static/media/step1.f6ea6b13fef58abbc202.png",
     "static/media/discovernet.svg": "/fresh-mint/static/media/discovernet.00469727598173cf80f6d0fa7a6d54ce.svg",
     "static/media/discord.svg": "/fresh-mint/static/media/discord.97a9d1e47f711dece166699086d53416.svg",
@@ -41,11 +53,11 @@
     "static/media/youtube.svg": "/fresh-mint/static/media/youtube.b0844466fbff4aff637195b43a02f57a.svg",
     "static/media/facebook.svg": "/fresh-mint/static/media/facebook.ae1500a7c5f300ebfb8a05225acaebd7.svg",
     "static/media/mc.svg": "/fresh-mint/static/media/mc.97962231718a49c8dd8f2da0a41f91a3.svg",
-    "main.6b946473.css.map": "/fresh-mint/static/css/main.6b946473.css.map",
-    "main.38aeeaeb.js.map": "/fresh-mint/static/js/main.38aeeaeb.js.map"
+    "main.76163f78.css.map": "/fresh-mint/static/css/main.76163f78.css.map",
+    "main.0778e873.js.map": "/fresh-mint/static/js/main.0778e873.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b946473.css",
-    "static/js/main.38aeeaeb.js"
+    "static/css/main.76163f78.css",
+    "static/js/main.0778e873.js"
   ]
 }
