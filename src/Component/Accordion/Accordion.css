@@ -56,7 +56,7 @@
   border-radius: 100%;
   width: 2rem;
   filter: invert(1);
-  background: var(--accent1);
+  background: var(--background);
   cursor: pointer;
 }
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Countdown.css';
 import sale from '../../Asset/Home/sale1.png'
-import sale1 from '../../Asset/Home/megaphone.png'
+import { Link } from 'react-router-dom'
 
 const Countdown = () => {
   const [timer, setTimer] = useState(86399); 
@@ -113,7 +113,7 @@ const Countdown = () => {
           </div>
         </div>
       </div>
-      <button><span>SUBSCRIBE NOW</span></button>
+      <Link to='/subscribe'><button><span>SUBSCRIBE NOW</span></button></Link>
     </div>
   );
 }

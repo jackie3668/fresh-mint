@@ -1,0 +1,47 @@
+.register .payment form div:nth-child(1) {
+  grid-column: span 2;
+}
+
+.card>div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card>div>div {
+  display: flex;
+}
+
+.card>div>div img {
+  width: 3.5rem;
+}
+
+.paypal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.paypal img {
+  width: 3.5rem;
+}
+
+.paypal h4,
+.card h4 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.checkbox {
+  border-radius: 100%;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid var(--accent1);
+  cursor: pointer;
+}
+
+.checkbox.checked {
+  border: 6px solid var(--accent1);
+}

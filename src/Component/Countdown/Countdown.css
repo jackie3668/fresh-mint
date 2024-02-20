@@ -143,6 +143,12 @@
   position: relative;
 }
 
+.countdown button a {
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  font-size: 1.25rem;
+}
+
 @keyframes flip-top {
   100% {
     transform: rotateX(90deg);

@@ -12,6 +12,7 @@ import Accordion from './Component/Accordion/Accordion';
 import Newsletter from './Component/Newsletter/Newsletter';
 import Footer from './Component/Footer/Footer';
 import Subscribe from './Page/Subscribe/Subscribe';
+import About from './Component/About/About';
 
 function App() {
   useEffect(() => {
@@ -56,6 +57,7 @@ function App() {
             }>
           </Route>
           <Route path='/subscribe' element={<Subscribe />} />
+          <Route path='/about' element={<About />} />
         </Routes>
         <Footer />
       </BrowserRouter>

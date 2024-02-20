@@ -16,7 +16,7 @@
   align-items: center;
 }
 
-.hero-content {
+.hero .hero-content {
   background: rgba(255, 255, 255, 0.8);
   padding: 5% 7%;
   display: flex;
@@ -35,6 +35,7 @@
   align-items: center;
   font-weight: 300;
   gap: 0.25rem;
+  text-wrap: nowrap;
 }
 
 .hero h3 .dot {
@@ -47,6 +48,7 @@
 
 .hero h3 span {
   font-style: italic;
+  text-wrap: nowrap;
 }
 
 .hero h1 {
@@ -117,21 +119,8 @@
   z-index: 1;
   color: var(--background);
   position: relative;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  font-size: 1.25rem;
 }
 
-
-@media (max-width: 768px) {
-
-}
-
-@media (min-width: 769px) and (max-width: 992px) {
-  
-}
-
-@media (min-width: 993px) and (max-width: 1200px) {
-
-}
-
-@media (min-width: 1201px) {
-
-}

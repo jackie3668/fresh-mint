@@ -42,8 +42,8 @@ const Navbar = () => {
         />
       </div>
       <ul className='hidden'>
-        <li>Home</li>
-        <li>About</li>        
+        <li><Link to='/'>Home</Link></li>
+        <li><Link to='/about'>About</Link></li>        
         <li>Recipes</li>
         <li>Contact Us</li>
         <li><Link to='/subscribe'>Subscribe</Link></li>
