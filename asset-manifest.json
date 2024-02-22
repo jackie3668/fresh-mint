@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fresh-mint/static/css/main.eca1e232.css",
-    "main.js": "/fresh-mint/static/js/main.4dbee719.js",
+    "main.css": "/fresh-mint/static/css/main.01a0f9c8.css",
+    "main.js": "/fresh-mint/static/js/main.40ece46f.js",
     "static/media/pexels-quang-nguyen-vinh-2131784.jpg": "/fresh-mint/static/media/pexels-quang-nguyen-vinh-2131784.d750de33ac047dd8ab25.jpg",
     "static/media/pexels-markus-spiske-1268101.jpg": "/fresh-mint/static/media/pexels-markus-spiske-1268101.2ef1b9218a06c8fa31ef.jpg",
     "static/media/1 (3).jpg": "/fresh-mint/static/media/1 (3).9c65ce8fd65137c69254.jpg",
@@ -41,6 +41,7 @@
     "static/media/option5.png": "/fresh-mint/static/media/option5.6f324098dea0e166b80a.png",
     "static/media/option6.png": "/fresh-mint/static/media/option6.36d3cbf217f0931a4867.png",
     "static/media/arrow-right.png": "/fresh-mint/static/media/arrow-right.a047fe68b104ae4adae5.png",
+    "static/media/telephone-call.png": "/fresh-mint/static/media/telephone-call.57acc33174c6bc83fee1.png",
     "static/media/weekly.png": "/fresh-mint/static/media/weekly.f328e026b63b2b9c68c8.png",
     "static/media/step1.png": "/fresh-mint/static/media/step1.f6ea6b13fef58abbc202.png",
     "static/media/discovernet.svg": "/fresh-mint/static/media/discovernet.00469727598173cf80f6d0fa7a6d54ce.svg",
@@ -55,11 +56,11 @@
     "static/media/youtube.svg": "/fresh-mint/static/media/youtube.b0844466fbff4aff637195b43a02f57a.svg",
     "static/media/facebook.svg": "/fresh-mint/static/media/facebook.ae1500a7c5f300ebfb8a05225acaebd7.svg",
     "static/media/mc.svg": "/fresh-mint/static/media/mc.97962231718a49c8dd8f2da0a41f91a3.svg",
-    "main.eca1e232.css.map": "/fresh-mint/static/css/main.eca1e232.css.map",
-    "main.4dbee719.js.map": "/fresh-mint/static/js/main.4dbee719.js.map"
+    "main.01a0f9c8.css.map": "/fresh-mint/static/css/main.01a0f9c8.css.map",
+    "main.40ece46f.js.map": "/fresh-mint/static/js/main.40ece46f.js.map"
   },
   "entrypoints": [
-    "static/css/main.eca1e232.css",
-    "static/js/main.4dbee719.js"
+    "static/css/main.01a0f9c8.css",
+    "static/js/main.40ece46f.js"
   ]
 }
