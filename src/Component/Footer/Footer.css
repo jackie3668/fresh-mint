@@ -95,15 +95,18 @@
 
   .footer-dropdown img {
     width: 2.5rem;
-    transform: rotate(270deg);
-    border: 1px solid #48b02c;
-    border-radius: 100%;
+    transform: rotate(90deg);
     padding: 8%;
     cursor: pointer;
+    z-index: 0;
+    position: relative;
   }
 
   .footer-dropdown img.close {
-    transform: rotate(90deg);
+    transform: rotate(270deg);
+    z-index: 0;
+    position: relative;
+    top: 0;
   }
 
    
@@ -125,6 +128,7 @@
 @media (min-width: 769px) {
   .footer-dropdown {
     display: none;
+    z-index: 2;
   }
 
   .footer-top {

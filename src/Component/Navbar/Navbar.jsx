@@ -44,7 +44,7 @@ const Navbar = () => {
       <ul className='hidden'>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/about'>About</Link></li>        
-        <li>Recipes</li>
+        <li><Link to='/recipes'>Recipes</Link></li>      
         <li>Contact Us</li>
         <li><Link to='/subscribe'>Subscribe</Link></li>
       </ul>

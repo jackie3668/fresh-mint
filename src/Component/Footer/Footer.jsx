@@ -7,7 +7,7 @@ import twitter from '../../Asset/UI/twitter.svg'
 import discord from '../../Asset/UI/discord.svg'
 import youtube from '../../Asset/UI/youtube.svg'
 import pinterest from '../../Asset/UI/pinterest.svg'
-import arrow from '../../Asset/UI/arrow.png'
+import arrow from '../../Asset/UI/arrow-right.png'
 import logo1 from '../../Asset/UI/mc.svg'
 import logo2 from '../../Asset/UI/visa_logo.svg'
 import logo3 from '../../Asset/UI/paypal.svg'
@@ -28,6 +28,7 @@ const Footer = () => {
   const handleDropdown = (e) => {
     const targetDiv = e.target.parentNode.previousElementSibling.querySelector('ul')
     targetDiv.classList.toggle('hidden')
+    e.target.classList.toggle('close')
   }
 
   return (

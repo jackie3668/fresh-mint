@@ -13,6 +13,7 @@ import Newsletter from './Component/Newsletter/Newsletter';
 import Footer from './Component/Footer/Footer';
 import Subscribe from './Page/Subscribe/Subscribe';
 import About from './Component/About/About';
+import Recipes from './Page/Recipes/Recipes';
 
 function App() {
   useEffect(() => {
@@ -58,6 +59,7 @@ function App() {
           </Route>
           <Route path='/subscribe' element={<Subscribe />} />
           <Route path='/about' element={<About />} />
+          <Route path='/recipes' element={<Recipes />} />
         </Routes>
         <Footer />
       </BrowserRouter>

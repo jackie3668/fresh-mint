@@ -1,0 +1,190 @@
+
+.recipes .banner {
+  background-image: url('../../Asset/Recipes/pexels-luna-lovegood-4087619.jpg');
+  background-size: cover;
+  height: 60vh;
+}
+
+.recipes .banner .hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+.recipes .banner .hero-contentt h1 {
+  font-weight: 600;
+}
+
+.recipes .banner .hero-content h3 {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.recipes .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 5%;
+}
+
+.recipes .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.recipes .tags li {
+  border: 1px solid var(--accent1);
+  padding: 0.5% 2%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.recipes .tags li.active {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.recipes-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.recipe-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--background);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: all 0.4s ease-in;
+  opacity: 1;
+}
+
+.recipe-wrapper img {
+  cursor: pointer;
+}
+
+.recipe-wrapper h4 {
+   cursor: pointer;
+   padding: 0% 5% 3% 5%;
+}
+
+.recipe-wrapper.active {
+  box-shadow: none;
+  transform: scale(1.2);
+  overflow: visible;
+  height: fit-content;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding-bottom: 2%;
+}
+
+.recipe-wrapper.active h4 {
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+}
+
+.content {
+  display: none;
+  opacity: 0;
+}
+
+.arrow.hidden {
+  display: none;
+}
+
+.recipe-wrapper.active .arrow {
+  display: inline-block;
+  width: 1.5rem;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.recipe-wrapper.active .content {
+  display: block;
+  padding: 3% 5% 7% 5%;
+  position: absolute;
+  top: 99%;
+  background-color: var(--background);
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.4); 
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  opacity: 1;
+  z-index: 9;
+}
+
+.recipe-wrapper.active .content span {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.recipe-wrapper.active .content ul {
+  font-size: 0.875rem;
+}
+
+.recipe-wrapper.active .content p {
+  font-size: 0.875rem;
+  margin-top: 0.5rem
+}
+
+.recipe-wrapper.active .content p span {
+  font-style: italic;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .recipes-list .recipe-wrapper {
+    max-width: 230px;
+  }
+}
+
+@media (max-width: 992px) {
+  .recipes .banner {
+    height: 30vh;
+    padding-top: 7%;
+  }
+
+  .recipes-list {
+    gap: 0.5rem;
+  }
+
+  .recipes .banner .hero-content {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 993px) {
+  .recipes .banner {
+    padding-top: 20%;
+  }
+
+  .recipes-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+}
+
+@media (min-width: 1201px) {
+  .recipes-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .recipes .banner {
+    padding-top: 10%;
+  }
+}
