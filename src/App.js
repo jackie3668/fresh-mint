@@ -14,6 +14,8 @@ import Footer from './Component/Footer/Footer';
 import Subscribe from './Page/Subscribe/Subscribe';
 import About from './Component/About/About';
 import Recipes from './Page/Recipes/Recipes';
+import Contact from './Page/Contact/Contact';
+
 
 function App() {
   useEffect(() => {
@@ -60,6 +62,7 @@ function App() {
           <Route path='/subscribe' element={<Subscribe />} />
           <Route path='/about' element={<About />} />
           <Route path='/recipes' element={<Recipes />} />
+          <Route path='/contact' element={<Contact/>} />
         </Routes>
         <Footer />
       </BrowserRouter>
