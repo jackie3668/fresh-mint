@@ -2,7 +2,7 @@
 .recipes .banner {
   background-image: url('../../Asset/Recipes/pexels-luna-lovegood-4087619.jpg');
   background-size: cover;
-  height: 60vh;
+  height: 40vh;
 }
 
 .recipes .banner .hero-content {
@@ -10,18 +10,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  gap: 1rem;
   padding-left: 5%;
-  padding-top: 5%;
+  gap: 1rem;
 }
 
-.recipes .banner .hero-contentt h1 {
-  font-weight: 600;
+.recipes .banner .hero-content h1 {
+  font-weight: 800;
 }
 
 .recipes .banner .hero-content h3 {
   font-style: italic;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 .recipes .container {
@@ -38,14 +37,25 @@
 }
 
 .recipes .tags li {
-  border: 1px solid var(--accent1);
+  background-color: var(--accent3);
+  color: var(--text);
+  font-weight: 600;
   padding: 0.5% 2%;
-  border-radius: 15px;
+  border-radius: 20px;
   cursor: pointer;
+  margin-bottom: 3%;
+}
+
+.recipes .tags li:hover {
+  background-color: var(--accent2);
+  color: var(--background);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .recipes .tags li.active {
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  background-color: var(--accent2);
+  color: var(--background);
 }
 
 
@@ -53,6 +63,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  position: relative;
 }
 
 .recipe-wrapper {
@@ -68,6 +79,7 @@
 
 .recipe-wrapper img {
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .recipe-wrapper h4 {
@@ -75,18 +87,30 @@
    padding: 0% 5% 3% 5%;
 }
 
-.recipe-wrapper.active {
-  box-shadow: none;
+.recipe-wrapper:hover {
   transform: scale(1.2);
+  border-radius: 10px;
+}
+
+.recipe-wrapper.active,
+.recipe-wrapper:hover {
+  box-shadow: none;
   overflow: visible;
   height: fit-content;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  padding-bottom: 2%;
 }
 
-.recipe-wrapper.active h4 {
+.recipe-wrapper.active:hover {
+  transform: none;
+}
+
+.recipe-wrapper.active {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+}
+
+.recipe-wrapper h4 {
   padding: 0 5%;
   display: flex;
   justify-content: space-between;
@@ -99,11 +123,7 @@
   opacity: 0;
 }
 
-.arrow.hidden {
-  display: none;
-}
-
-.recipe-wrapper.active .arrow {
+.recipe-wrapper .arrow {
   display: inline-block;
   width: 1.5rem;
   transform: rotate(90deg);
@@ -111,6 +131,7 @@
 }
 
 .recipe-wrapper.active .content {
+  width: 100%;
   display: block;
   padding: 3% 5% 7% 5%;
   position: absolute;
@@ -121,11 +142,22 @@
   border-bottom-right-radius: 10px;
   opacity: 1;
   z-index: 9;
+  max-height: 40vh;
+  overflow-y: scroll;
 }
 
-.recipe-wrapper.active .content span {
-  font-weight: 600;
+.recipe-wrapper>span {
+  padding: 0 5% 5% 5%;
   font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.recipe-wrapper span {
+  font-weight: 600;
+}
+
+.recipe-wrapper h4 {
+  padding-bottom: 4%;
 }
 
 .recipe-wrapper.active .content ul {
@@ -143,13 +175,40 @@
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .recipes-list .recipe-wrapper {
-    max-width: 230px;
-  }
+.recipe-wrapper.active .fs-hide {
+  display: none;
 }
 
+.recipe-wrapper .fs-show {
+  display: none
+}
+
+.recipe-wrapper.active .fs-show {
+  display: block;
+  padding: 0 5%;;
+}
+
+
 @media (max-width: 992px) {
+
+  .recipe-wrapper.active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .recipe-wrapper.active .recipe-image {
+    width: 200px;
+  }
+
+  .recipe-wrapper.active {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    max-width: 90%;
+  }
+  
   .recipes .banner {
     height: 30vh;
     padding-top: 7%;
@@ -162,9 +221,41 @@
   .recipes .banner .hero-content {
     max-width: 300px;
   }
+  .bs-hide {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .recipes-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .recipes-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5%;
+  }
+
+  .recipes .banner .hero-content h1 {
+    max-width: 200px;
+    padding-top: 8%;
+  }
+  
 }
 
 @media (min-width: 993px) {
+  .bs-hide {
+    display: none;
+  }
   .recipes .banner {
     padding-top: 20%;
   }
